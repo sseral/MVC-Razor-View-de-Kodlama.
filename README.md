@@ -62,10 +62,10 @@ public partial class yemeklerViewModel
 CONTROLLER
 
 public ActionResult Yemekler()
-{        
+{
 Var query = (from yemeks in db.yemek
 select new yemeklerViewModel
-{ 
+{
 yemek_adı = yemeks.yemek_Adı,
 opsiyon1 = yemeks.opsiyon1,
 opsiyon2 = yemeks.opsiyon2,
@@ -74,7 +74,6 @@ opsiyon1_fiyat = yemeks.opsiyon1_fiyat
 opsiyon2_fiyat = yemeks.opsiyon2_fiyat
 opsiyon3_fiyat = yemeks.opsiyon3_fiyat
 });
-
 Return View(query.ToList());
 }
 
