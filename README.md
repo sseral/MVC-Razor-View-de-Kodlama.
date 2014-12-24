@@ -7,9 +7,9 @@ Tablo Adı : yemek
 
 Alan Adı	      Alan yapısı
 
-Yemek_Adı	      nvarchar(MAX)
-opsiyon1	      nvarchar(MAX)
-opsiyon2	      nvarchar(MAX)
+Yemek_Adı       nvarchar(MAX)
+opsiyon1        nvarchar(MAX)
+opsiyon2        nvarchar(MAX)
 opsiyon3        nvarchar(MAX)
 opsiyon1_fiyat  money
 opsiyon2_fiyat  money
