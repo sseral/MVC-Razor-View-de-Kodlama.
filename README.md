@@ -7,45 +7,56 @@ Tablo Adı :     yemek
 
 Alan Adı        Alan yapısı
 
-yemek_adı       nvarchar(MAX)
+yemek_adı   =>    nvarchar(MAX)
 
-opsiyon1        nvarchar(MAX)
+opsiyon1    =>    nvarchar(MAX)
 
-opsiyon2        nvarchar(MAX)
+opsiyon2    =>    nvarchar(MAX)
 
-opsiyon3        nvarchar(MAX)
+opsiyon3     =>   nvarchar(MAX)
 
-opsiyon1_fiyat  money
+opsiyon1_fiyat  => money
 
-opsiyon2_fiyat  money
+opsiyon2_fiyat => money
 
-opsiyon3_fiyat  money
+opsiyon3_fiyat  => money
 
 
 Amacımız Razor View ‘de  Listeleme yaparken aşağıdaki gibi bir görüntü almak.
 
 Yemek Adı :  Yemek 1 adı
+
 Opsiyonlar : DROPDOWN (Burada opsiyon1, opsiyon2, opsiyon3 ‘ü ve fiyatlarını birleştirip DropDown ‘da göstereceğiz.)
+
 .....
+
 Yemek Adı :  Yemek2 adı
+
 Opsiyonlar : DROPDOWN (Burada opsiyon1, opsiyon2, opsiyon3 ‘ü ve fiyatlarını birleştirip DropDown ‘da göstereceğiz.)
+
 .....
+
 Yemek Adı :  Yemek3 adı
+
 Opsiyonlar : DROPDOWN (Burada opsiyon1, opsiyon2, opsiyon3 ‘ü ve fiyatlarını birleştirip DropDown ‘da göstereceğiz.)
+
 .....
+
 
 MODEL
 
 public partial class yemeklerViewModel
-{
-        public string yemek_adı { get; set; }
 
+{
+
+        public string yemek_adı { get; set; }
         public string opsiyon1 { get; set; }
         public string opsiyon2 { get; set; }
         public string opsiyon3 { get; set; }
         public Nullable<decimal> opsiyon1_fiyat { get; set; }
         public Nullable<decimal> opsiyon1_fiyat { get; set; }
         public Nullable<decimal> opsiyon1_fiyat { get; set; }
+        
 }
 
 CONTROLLER
