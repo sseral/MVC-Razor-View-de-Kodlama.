@@ -63,6 +63,9 @@ Return View(query.ToList());
 
 
 VIEW
+=====
+Aşağıda  Razor View 'de kodlama yapıyoruz DropDown 'ları oluşturmak için.
+=====
 @model IEnumerable<ProjeNameSpace.Models.yemeklerViewModel >
 
 @foreach (var item in Model)
@@ -71,8 +74,6 @@ VIEW
     {
   if (item.opsiyon1 != null || item.opsiyon2 != null || item.opsiyon3 != null)
         {
-             
-
             List<SelectListItem> listItems = new List<SelectListItem>();
             if (item.opsiyon1 != null)
             {
